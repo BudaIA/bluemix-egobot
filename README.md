@@ -1,7 +1,7 @@
 # Egobot
 ## A slightly mutating ego-centric chatbot
 
-
+![](https://raw.githubusercontent.com/data-henrik/bluemix-egobot/master/images/egobot-session.en.gif)
 
 # Documentation and Resources
 Here are some useful links to documentation and other resources:

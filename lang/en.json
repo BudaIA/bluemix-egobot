@@ -8,6 +8,6 @@
     {
       "iname": "Please provide a name for the intent",
       "idescription": "A short description",
-      "isamples": "Please provide samples? Use '/' as seperator"
+      "isamples": "Please provide samples. Use '/' as separator"
     }
 }
