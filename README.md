@@ -2,8 +2,10 @@
 ## A slightly mutating ego-centric chatbot
 Chat with this bot, ask about its metadata and make the bot apply changes to itself.
 
+The code supports chatbots in any language. A German and English version is provided.
 
-A sample session
+A sample session:   
+
 ![](https://raw.githubusercontent.com/data-henrik/bluemix-egobot/master/images/egobot-session.en.gif)
 
 # Setup instructions coming...
