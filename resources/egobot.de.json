@@ -1,0 +1,413 @@
+{
+  "status": "Available",
+  "intents": [
+    {
+      "updated": "2017-06-01T09:28:26.231Z",
+      "description": null,
+      "intent": "Anzeigen",
+      "examples": [
+        {
+          "text": "Gib mir deine Intents",
+          "updated": "2017-05-30T12:12:28.007Z",
+          "created": "2017-05-30T12:12:28.007Z"
+        },
+        {
+          "text": "Was sind deine Absichten?",
+          "updated": "2017-05-30T12:12:35.312Z",
+          "created": "2017-05-30T12:12:35.312Z"
+        },
+        {
+          "text": "Liste mir deine Ziele auf",
+          "updated": "2017-05-30T12:13:03.112Z",
+          "created": "2017-05-30T12:13:03.112Z"
+        },
+        {
+          "text": "Zeige mir die Liste deiner Intents",
+          "updated": "2017-05-30T12:13:28.365Z",
+          "created": "2017-05-30T12:13:28.365Z"
+        },
+        {
+          "text": "Was hast du f\u00fcr Ziele?",
+          "updated": "2017-05-30T12:14:19.963Z",
+          "created": "2017-05-30T12:14:19.963Z"
+        },
+        {
+          "text": "Was sind deine wahren Absichten?",
+          "updated": "2017-05-30T12:14:34.182Z",
+          "created": "2017-05-30T12:14:34.182Z"
+        },
+        {
+          "text": "F\u00fcr was hat man dich trainiert?",
+          "updated": "2017-05-30T12:14:50.513Z",
+          "created": "2017-05-30T12:14:50.513Z"
+        },
+        {
+          "text": "Gib mir deine Metadaten",
+          "updated": "2017-05-30T12:20:44.639Z",
+          "created": "2017-05-30T12:20:44.639Z"
+        },
+        {
+          "text": "Was sind deine Entities?",
+          "updated": "2017-05-30T12:20:57.336Z",
+          "created": "2017-05-30T12:20:57.336Z"
+        },
+        {
+          "text": "Welche Objekte kannst du erkennen?",
+          "updated": "2017-05-30T12:21:33.141Z",
+          "created": "2017-05-30T12:21:33.141Z"
+        },
+        {
+          "text": "Zeige mir die Dialogknoten",
+          "updated": "2017-05-30T12:21:45.058Z",
+          "created": "2017-05-30T12:21:45.058Z"
+        },
+        {
+          "text": "Zeige Objekte an",
+          "updated": "2017-06-01T09:28:14.041Z",
+          "created": "2017-06-01T09:28:14.041Z"
+        },
+        {
+          "text": "Objekte",
+          "updated": "2017-06-01T09:28:26.231Z",
+          "created": "2017-06-01T09:28:26.231Z"
+        }
+      ],
+      "created": "2017-05-30T12:12:20.945Z"
+    },
+    {
+      "updated": "2017-05-31T15:30:37.322Z",
+      "description": null,
+      "intent": "Hinzufuegen",
+      "examples": [
+        {
+          "text": "F\u00fcge den folgenden Intent hinzu",
+          "updated": "2017-05-30T12:22:57.696Z",
+          "created": "2017-05-30T12:22:57.696Z"
+        },
+        {
+          "text": "Erzeuge das neue Objekt",
+          "updated": "2017-05-30T12:23:10.638Z",
+          "created": "2017-05-30T12:23:10.638Z"
+        },
+        {
+          "text": "Kreiere f\u00fcr mich ein neues Entity",
+          "updated": "2017-05-30T12:23:29.663Z",
+          "created": "2017-05-30T12:23:29.663Z"
+        },
+        {
+          "text": "Nimm eine neue Absicht auf",
+          "updated": "2017-05-30T12:23:50.333Z",
+          "created": "2017-05-30T12:23:50.333Z"
+        },
+        {
+          "text": "Lege eine neue Absicht an",
+          "updated": "2017-05-30T12:23:58.742Z",
+          "created": "2017-05-30T12:23:58.742Z"
+        },
+        {
+          "text": "Hinzuf\u00fcge als Objekt",
+          "updated": "2017-05-30T13:55:50.477Z",
+          "created": "2017-05-30T13:55:50.477Z"
+        }
+      ],
+      "created": "2017-05-30T12:22:44.030Z"
+    }
+  ],
+  "name": "EgoBot",
+  "language": "de",
+  "description": "Es dreht sich alles um den Chatbot selbst.", 
+  "entities": [
+    {
+      "updated": "2017-05-30T13:58:47.838Z",
+      "description": null,
+      "created": "2017-05-30T13:56:34.211Z",
+      "entity": "entities",
+      "values": [
+        {
+          "updated": "2017-05-30T13:57:10.710Z",
+          "metadata": null,
+          "synonyms": [
+            "entities",
+            "Entit\u00e4t, entities"
+          ],
+          "value": "Entity",
+          "created": "2017-05-30T13:56:40.322Z"
+        },
+        {
+          "updated": "2017-05-30T13:58:10.668Z",
+          "metadata": null,
+          "synonyms": [
+            "objects",
+            "Objekte"
+          ],
+          "value": "Objekt",
+          "created": "2017-05-30T13:57:18.413Z"
+        },
+        {
+          "updated": "2017-05-30T13:58:23.292Z",
+          "metadata": null,
+          "synonyms": [
+            "Dinge"
+          ],
+          "value": "Ding",
+          "created": "2017-05-30T13:58:15.119Z"
+        },
+        {
+          "updated": "2017-05-30T13:58:47.838Z",
+          "metadata": null,
+          "synonyms": [
+            "Gebilde"
+          ],
+          "value": "Wesen",
+          "created": "2017-05-30T13:58:30.198Z"
+        }
+      ],
+      "metadata": null
+    },
+    {
+      "updated": "2017-05-30T14:00:28.694Z",
+      "description": null,
+      "created": "2017-05-30T14:00:15.914Z",
+      "entity": "Dialogdetails",
+      "values": [
+        {
+          "updated": "2017-05-30T14:00:20.195Z",
+          "metadata": null,
+          "synonyms": [],
+          "value": "Metadaten",
+          "created": "2017-05-30T14:00:20.195Z"
+        },
+        {
+          "updated": "2017-05-30T14:00:24.082Z",
+          "metadata": null,
+          "synonyms": [],
+          "value": "Dialogknoten",
+          "created": "2017-05-30T14:00:24.082Z"
+        },
+        {
+          "updated": "2017-05-30T14:00:28.694Z",
+          "metadata": null,
+          "synonyms": [],
+          "value": "Details",
+          "created": "2017-05-30T14:00:28.694Z"
+        }
+      ],
+      "metadata": null
+    },
+    {
+      "updated": "2017-05-30T14:12:20.887Z",
+      "description": null,
+      "created": "2017-05-30T13:58:55.916Z",
+      "entity": "intents",
+      "values": [
+        {
+          "updated": "2017-05-30T13:59:37.589Z",
+          "metadata": null,
+          "synonyms": [
+            "intents"
+          ],
+          "value": "Intent",
+          "created": "2017-05-30T13:59:32.351Z"
+        },
+        {
+          "updated": "2017-05-30T13:59:51.047Z",
+          "metadata": null,
+          "synonyms": [],
+          "value": "Gedanken",
+          "created": "2017-05-30T13:59:51.047Z"
+        },
+        {
+          "updated": "2017-05-30T14:12:05.931Z",
+          "metadata": null,
+          "synonyms": [
+            "Absichten"
+          ],
+          "value": "Absicht",
+          "created": "2017-05-30T13:59:22.085Z"
+        },
+        {
+          "updated": "2017-05-30T14:12:20.887Z",
+          "metadata": null,
+          "synonyms": [
+            "Ziele"
+          ],
+          "value": "Ziel",
+          "created": "2017-05-30T13:59:47.896Z"
+        }
+      ],
+      "metadata": null
+    }
+  ],
+  "counterexamples": [],
+  "dialog_nodes": [
+    {
+      "updated": "2017-05-30T14:58:18.966Z",
+      "description": null,
+      "parent": null,
+      "created": "2017-05-30T14:06:06.665Z",
+      "dialog_node": "Anzeigen",
+      "previous_sibling": "Willkommen",
+      "context": null,
+      "output": {},
+      "metadata": null,
+      "conditions": "#Anzeigen",
+      "go_to": null
+    },
+    {
+      "updated": "2017-05-31T17:53:58.418Z",
+      "description": null,
+      "parent": null,
+      "created": "2017-05-31T15:25:33.628Z",
+      "dialog_node": "Hinzuf\u00fcgen",
+      "previous_sibling": "Anzeigen",
+      "context": null,
+      "output": {},
+      "metadata": null,
+      "conditions": "#Hinzufuegen",
+      "go_to": null
+    },
+    {
+      "updated": "2017-05-30T14:05:49.342Z",
+      "description": null,
+      "parent": null,
+      "created": "2017-05-30T14:01:03.587Z",
+      "dialog_node": "Willkommen",
+      "previous_sibling": null,
+      "context": null,
+      "output": {
+        "text": {
+          "values": [
+            "Hallo. Wie kann ich dir helfen?",
+            "Moin, was liegt an?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "metadata": null,
+      "conditions": "welcome",
+      "go_to": null
+    },
+    {
+      "updated": "2017-05-30T14:01:03.587Z",
+      "description": null,
+      "parent": null,
+      "created": "2017-05-30T14:01:03.587Z",
+      "dialog_node": "Andernfalls",
+      "previous_sibling": "Hinzuf\u00fcgen",
+      "context": null,
+      "output": {
+        "text": {
+          "values": [
+            "Ich habe Sie nicht verstanden. Bitte formulieren Sie Ihre Aussage neu.",
+            "K\u00f6nnen Sie Ihre Aussage anders formulieren? Ich verstehe nicht, was Sie meinen.",
+            "Ich habe nicht verstanden, was Sie meinen."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": null,
+      "conditions": "anything_else",
+      "go_to": null
+    },
+    {
+      "updated": "2017-05-30T15:03:39.950Z",
+      "description": null,
+      "parent": "Anzeigen",
+      "created": "2017-05-30T14:31:41.463Z",
+      "conditions": "@entities",
+      "dialog_node": "node_3_1496154702777",
+      "previous_sibling": null,
+      "context": {
+        "action": "listEntities"
+      },
+      "output": {
+        "text": {
+          "values": [
+            "Hier sind meine Objekte",
+            "Meine Entities m\u00f6chtest du sehen? Na gut."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "metadata": null,
+      "type": "response_condition",
+      "go_to": null
+    },
+    {
+      "updated": "2017-05-30T15:03:42.695Z",
+      "description": null,
+      "parent": "Anzeigen",
+      "created": "2017-05-30T14:31:41.313Z",
+      "conditions": "@intents",
+      "dialog_node": "node_2_1496154702542",
+      "previous_sibling": "node_3_1496154702777",
+      "context": {
+        "action": "listIntents"
+      },
+      "output": {
+        "text": {
+          "values": [
+            "Ich kann dir die \"Intents\" anzeigen. Bitte.",
+            "Hier sind meine Ziele:",
+            "Meine Absichten? Das sind folgende:"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "metadata": null,
+      "type": "response_condition",
+      "go_to": null
+    },
+    {
+      "updated": "2017-05-31T15:28:12.711Z",
+      "description": null,
+      "parent": "Hinzuf\u00fcgen",
+      "created": "2017-05-31T15:25:56.310Z",
+      "conditions": " @intents",
+      "dialog_node": "node_6_1496244357672",
+      "previous_sibling": null,
+      "context": {
+        "action": "addIntent"
+      },
+      "output": {
+        "text": {
+          "values": [
+            "Ich kann Intents hinzuf\u00fcgen.",
+            "Ok, ich f\u00fcge eine neue Absicht hinzu.",
+            "Neue Ziele, neues Gl\u00fcck."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": null,
+      "type": "response_condition",
+      "go_to": null
+    },
+    {
+      "updated": "2017-05-30T15:02:18.687Z",
+      "description": null,
+      "parent": "Anzeigen",
+      "created": "2017-05-30T14:33:28.407Z",
+      "conditions": "",
+      "dialog_node": "node_4_1496154809660",
+      "previous_sibling": "node_2_1496154702542",
+      "context": {
+        "action": "askForOptions"
+      },
+      "output": {
+        "text": {
+          "values": [
+            "Was soll ich anzeigen?",
+            "M\u00f6chtest du meine Intents oder Entities sehen?",
+            "Ich kann die Ziele oder die Objekte anzeigen"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "metadata": null,
+      "type": "response_condition",
+      "go_to": null
+    }
+  ],
+  "metadata": null
+}

@@ -1,0 +1,13 @@
+{
+  "chat":
+    {
+      "prompt": "Deine Eingabe:",
+      "initialMessage": "Ich beginne mit dem Dialog. Stopp durch Ctrl+C oder Eingabe von 'bye'"
+    },
+  "intents":
+    {
+      "iname": "Wie soll der Intent heissen?",
+      "idescription": "Kurze Beschreibung",
+      "isamples": "Welche Beispiele? Nutze '/' als Trenner"
+    }
+}

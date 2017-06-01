@@ -1,0 +1,294 @@
+{
+  "status": "Available",
+  "intents": [
+    {
+      "description": null,
+      "intent": "Display",
+      "examples": [
+        {
+          "text": "Show me your intents"
+        },
+        {
+          "text": "What are your intents?"
+        },
+        {
+          "text": "Please list your goals"
+        },
+        {
+          "text": "What are the purposes"
+        },
+        {
+          "text": "Display your intents"
+        },
+        {
+          "text": "What are your true goals"
+        },
+        {
+          "text": "Print your entities"
+        },
+        {
+          "text": "Print your metadata"
+        },
+        {
+          "text": "What objects do you have"
+        },
+        {
+          "text": "Show and tell about your goals"
+        }
+      ]
+    },
+    {
+      "description": null,
+      "intent": "Create",
+      "examples": [
+        {
+          "text": "Create a new intent"
+        },
+        {
+          "text": "Add this new entity"
+        },
+        {
+          "text": "Insert this new goal"
+        },
+        {
+          "text": "Let's append this entity"
+        },
+        {
+          "text": "Expand the dialog by this node"
+        }
+      ]
+    }
+  ],
+  "name": "EgoBot",
+  "language": "en",
+  "description": "A slightly mutating ego-centric chatbot.",
+  "entities": [
+    {
+      "description": null,
+      "entity": "entities",
+      "values": [
+        {
+          "metadata": null,
+          "synonyms": [
+            "entity",
+            "entities"
+          ],
+          "value": "entity"
+        },
+        {
+          "metadata": null,
+          "synonyms": [
+            "objects"
+          ],
+          "value": "object"
+        },
+        {
+          "metadata": null,
+          "synonyms": [
+            "type",
+            "types"
+          ],
+          "value": "thing"
+        }
+      ],
+      "metadata": null
+    },
+    {
+      "description": null,
+      "entity": "dialogdetails",
+      "values": [
+        {
+          "metadata": null,
+          "synonyms": [],
+          "value": "metadata"
+        },
+        {
+          "metadata": null,
+          "synonyms": [],
+          "value": "dialog nodes"
+        },
+        {
+          "metadata": null,
+          "synonyms": [],
+          "value": "details"
+        }
+      ],
+      "metadata": null
+    },
+    {
+      "description": null,
+      "entity": "intents",
+      "values": [
+        {
+          "metadata": null,
+          "synonyms": [
+            "intents"
+          ],
+          "value": "intent"
+        },
+        {
+          "metadata": null,
+          "synonyms": [
+            "goals",
+            "goal"
+          ],
+          "value": "goal"
+        }
+      ],
+      "metadata": null
+    }
+  ],
+  "counterexamples": [],
+  "dialog_nodes": [
+    {
+      "description": null,
+      "parent": null,
+      "dialog_node": "Display",
+      "previous_sibling": "Welcome",
+      "context": null,
+      "output": {},
+      "metadata": null,
+      "conditions": "#Display",
+      "go_to": null
+    },
+    {
+      "description": null,
+      "parent": null,
+      "dialog_node": "Create",
+      "previous_sibling": "Display",
+      "context": null,
+      "output": {},
+      "metadata": null,
+      "conditions": "#Create",
+      "go_to": null
+    },
+    {
+      "description": null,
+      "parent": null,
+      "dialog_node": "Welcome",
+      "previous_sibling": null,
+      "context": null,
+      "output": {
+        "text": {
+          "values": [
+            "Hello. How can I help you?",
+            "What's up?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "metadata": null,
+      "conditions": "welcome",
+      "go_to": null
+    },
+    {
+      "description": null,
+      "parent": null,
+      "dialog_node": "Anything else",
+      "previous_sibling": "Create",
+      "context": null,
+      "output": {
+        "text": {
+          "values": [
+            "I didn't understand. You can try rephrasing",
+            "Can you reword your statement?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": null,
+      "conditions": "anything_else",
+      "go_to": null
+    },
+    {
+      "description": null,
+      "parent": "Display",
+      "conditions": "@entities",
+      "dialog_node": "node_3_1496154702777",
+      "previous_sibling": null,
+      "context": {
+        "action": "listEntities"
+      },
+      "output": {
+        "text": {
+          "values": [
+            "Here are the entities",
+            "You would like to see my entities? Here they are."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "metadata": null,
+      "type": "response_condition",
+      "go_to": null
+    },
+    {
+      "description": null,
+      "parent": "Display",
+      "conditions": "@intents",
+      "dialog_node": "node_2_1496154702542",
+      "previous_sibling": "node_3_1496154702777",
+      "context": {
+        "action": "listIntents"
+      },
+      "output": {
+        "text": {
+          "values": [
+            "I can show you my intents. Here we go.",
+            "Here are my goals:"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "metadata": null,
+      "type": "response_condition",
+      "go_to": null
+    },
+    {
+      "description": null,
+      "parent": "Create",
+      "conditions": " @intents",
+      "dialog_node": "node_6_1496244357672",
+      "previous_sibling": null,
+      "context": {
+        "action": "addIntent"
+      },
+      "output": {
+        "text": {
+          "values": [
+            "I can add intents if you want",
+            "Ok, let's add a new goal.",
+            "I can create a new intent. You have to help me?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": null,
+      "type": "response_condition",
+      "go_to": null
+    },
+    {
+      "description": null,
+      "parent": "Display",
+      "conditions": "",
+      "dialog_node": "node_4_1496154809660",
+      "previous_sibling": "node_2_1496154702542",
+      "context": {
+        "action": "askForOptions"
+      },
+      "output": {
+        "text": {
+          "values": [
+            "What do you want printed?",
+            "Wanna see intents or entities?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "metadata": null,
+      "type": "response_condition",
+      "go_to": null
+    }
+  ],
+  "metadata": null
+}
