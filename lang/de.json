@@ -9,5 +9,10 @@
       "iname": "Wie soll der Intent heissen?",
       "idescription": "Kurze Beschreibung",
       "isamples": "Welche Beispiele? Nutze '/' als Trenner"
+    },
+    "setup":
+    {
+      "details": "Workspace-Details",
+      "workspaceID": "Nutze die folgende workspaceID als Parameter für das dialog-Kommando"
     }
 }

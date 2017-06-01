@@ -35,10 +35,38 @@ def getParameters(args=None):
     parser.add_argument("-l",dest='listWorkspaces', action='store_true', help='list workspaces')
     parser.add_argument("-logs",dest='listLogs', action='store_true', help='list logs')
     parser.add_argument("-dialog",dest='dialog', action='store_true', help='have dialog')
+    parser.add_argument("-setup",dest='setup', action='store_true', help='setup chatbot')
     parser.add_argument("-id",dest='workspaceID', help='Workspace ID')
+    parser.add_argument("-name",dest='setupName', help='Workspace Name')
+    parser.add_argument("-lang",dest='setupLanguage', help='Workspace Language')
 
     parms = parser.parse_args()
     return parms
+
+# Setup workspace for specified language
+def setupWorkspace(newName, newLang):
+    # Load language-dependent workspace file
+    inFile="resources/egobot."+newLang+".json"
+    with open(inFile) as jsonFile:
+        ws=json.load(jsonFile)
+
+    # Now open localization file for chat language
+    fname="lang/"+newLang+".json"
+    with open(fname) as localizationFile:
+        localizationConf=json.load(localizationFile)
+    newWorkspace=conversation.create_workspace(name=newName,
+                                               description=ws['description'],
+                                               language=newLang,
+                                               intents=ws["intents"],
+                                               entities=ws["entities"],
+                                               dialog_nodes=ws["dialog_nodes"],
+                                               counterexamples=ws["counterexamples"],
+                                               metadata=ws['metadata'])
+    print localizationConf['setup']['details']
+    print(json.dumps(newWorkspace, indent=2))
+    print
+    print localizationConf['setup']['workspaceID']+":\n\""+newWorkspace['workspace_id']+"\""
+
 
 # List available dialogs
 def listWorkspaces():
@@ -136,3 +164,5 @@ if __name__ == '__main__':
         listLogs(parms.workspaceID)
     if (parms.dialog and parms.workspaceID):
         converse(parms.workspaceID)
+    if (parms.setup and parms.setupName and parms.setupLanguage):
+        setupWorkspace(newName=parms.setupName, newLang=parms.setupLanguage)

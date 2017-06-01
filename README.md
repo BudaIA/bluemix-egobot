@@ -13,6 +13,24 @@ A sample session:
 If you have been working with the Watson service and Python before, you probably already have everything installed. If not, you need to install Python and then head over to the Watson Developer Tools and follow the link to the Python SDK. Install the SDK, too. Now download a copy of this repository or clone it.
 To use the tool, copy config.json.sample to config.json and insert your service credentials. Note that the service URL depends on the IBM Bluemix region. It is shown as part of the credentials.
 
+English setup:   
+```
+python egobot.py -setup -name egoEnglish -lang en
+```
+German setup:
+```
+python egobot.py -setup -name egoDeutsch -lang de
+```
+
+
+Wait 1-5 minutes for the training of Watson Conversation to be completed.
+
+Start the dialog:   
+```
+python egobot.py -dialog -id "fasda5-xxxx-yyyy-913e-cde11d305ccf"
+```
+
+
 # Documentation and Resources
 Here are some useful links to documentation and other resources:
 * Watson Conversation service: https://www.ibm.com/watson/developercloud/doc/conversation/index.html

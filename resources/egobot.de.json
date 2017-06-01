@@ -4,7 +4,7 @@
     {
       "updated": "2017-06-01T09:28:26.231Z",
       "description": null,
-      "intent": "Anzeigen",
+      "intent": "Display",
       "examples": [
         {
           "text": "Gib mir deine Intents",
@@ -77,7 +77,7 @@
     {
       "updated": "2017-05-31T15:30:37.322Z",
       "description": null,
-      "intent": "Hinzufuegen",
+      "intent": "Create",
       "examples": [
         {
           "text": "F\u00fcge den folgenden Intent hinzu",
@@ -115,7 +115,7 @@
   ],
   "name": "EgoBot",
   "language": "de",
-  "description": "Es dreht sich alles um den Chatbot selbst.", 
+  "description": "Es dreht sich alles um den Chatbot selbst.",
   "entities": [
     {
       "updated": "2017-05-30T13:58:47.838Z",
@@ -250,7 +250,7 @@
       "context": null,
       "output": {},
       "metadata": null,
-      "conditions": "#Anzeigen",
+      "conditions": "#Display",
       "go_to": null
     },
     {
@@ -263,7 +263,7 @@
       "context": null,
       "output": {},
       "metadata": null,
-      "conditions": "#Hinzufuegen",
+      "conditions": "#Create",
       "go_to": null
     },
     {

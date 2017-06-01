@@ -9,5 +9,10 @@
       "iname": "Please provide a name for the intent",
       "idescription": "A short description",
       "isamples": "Please provide samples. Use '/' as separator"
+    },
+    "setup":
+    {
+      "details": "Workspace details",
+      "workspaceID": "Use the following workspaceID as parameter for the dialog command"
     }
 }
