@@ -1,7 +1,15 @@
 # Egobot
 ## A slightly mutating ego-centric chatbot
+Chat with this bot, ask about its metadata and make the bot apply changes to itself.
 
+
+A sample session
 ![](https://raw.githubusercontent.com/data-henrik/bluemix-egobot/master/images/egobot-session.en.gif)
+
+# Setup instructions coming...
+
+If you have been working with the Watson service and Python before, you probably already have everything installed. If not, you need to install Python and then head over to the Watson Developer Tools and follow the link to the Python SDK. Install the SDK, too. Now download a copy of this repository or clone it.
+To use the tool, copy config.json.sample to config.json and insert your service credentials. Note that the service URL depends on the IBM Bluemix region. It is shown as part of the credentials.
 
 # Documentation and Resources
 Here are some useful links to documentation and other resources:
@@ -10,6 +18,7 @@ Here are some useful links to documentation and other resources:
 * Python SDK, Watson Developer Cloud: https://github.com/watson-developer-cloud/python-sdk
 * Conversation API file in Python SDK: https://github.com/watson-developer-cloud/python-sdk/blob/master/watson_developer_cloud/conversation_v1.py
 * The `argparse` module used for this tool: https://docs.python.org/2/library/argparse.html
+* Watson Conversation Tool: https://github.com/data-henrik/watson-conversation-tool
 
 
 # License
