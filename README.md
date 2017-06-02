@@ -2,7 +2,7 @@
 #### A slightly mutating ego-centric chatbot
 Chat with this bot, ask about its metadata and make the bot apply changes to itself.
 
-The code supports chatbots in any language. A German and English version is provided.
+The Python code supports chatbots in any language. A German and English version is provided. The EgoBot runs locally and uses the [IBM Watson Conversation](https://www.ibm.com/watson/developercloud/doc/conversation/index.html) service which is offered on [IBM Bluemix](http://www.ibm.com/cloud-computing/bluemix/).
 
 A sample session:   
 
@@ -11,7 +11,7 @@ A sample session:
 # Setup instructions
 
 If you have been working with the Watson service and Python before, you probably already have everything installed. If not, you need to install Python and then head over to the Watson Developer Tools and follow the link to the [Python SDK](https://github.com/watson-developer-cloud/python-sdk). Install the SDK, too. Now download a copy of this repository or clone it.   
-To use the tool, copy `config.json.sample` to `config.json` and insert your service credentials. Note that the service URL depends on the IBM Bluemix region. It is shown as part of the credentials. You can read here more about [how to manage the Bluemix service keys](https://www.ibm.com/blogs/bluemix/2017/06/manage-bluemix-service-keys-via-cli/).
+To use the tool, copy `config.json.sample` to `config.json` and insert your service credentials for the IBM Watson Conversation service. Note that the service URL depends on the IBM Bluemix region. It is shown as part of the credentials. You can read here more about [how to manage the Bluemix service keys](https://www.ibm.com/blogs/bluemix/2017/06/manage-bluemix-service-keys-via-cli/).
 
 English setup:   
 ```
@@ -53,6 +53,12 @@ If you forgot it, then you can obtain it by using the `list` feature:
 python egobot.py -l
 ```
 This will return all available workspaces and list their details, including the `workspace_id`.
+
+### Dialog Logs
+The EgoBot supports access to the conversation logs. This helps to debug and improve a dialog. The logs for a workspace can be obtained as follows, passing the correct workspace_id:   
+```
+python egobot.py -logs -id "fasda5-xxxx-yyyy-913e-cde11d305ccf"
+```
 
 # Code Structure
 The EgoBot is written in Python with all code in the file `egobot.py`. Sources for a German and an English conversation workspace are provided in the `resources` directory. The files are needed for the setup.   
