@@ -1,5 +1,5 @@
 # Egobot
-## A slightly mutating ego-centric chatbot
+#### A slightly mutating ego-centric chatbot
 Chat with this bot, ask about its metadata and make the bot apply changes to itself.
 
 The code supports chatbots in any language. A German and English version is provided.
@@ -47,12 +47,16 @@ Starting the dialog. To stop use Ctrl+C or type 'bye'
 Your input:
 ```
 
-### Obtaining the workspace ID
+### Obtaining the Workspace ID
 If you forgot it, then you can obtain it by using the `list` feature:   
 ```
 python egobot.py -l
 ```
 This will return all available workspaces and list their details, including the `workspace_id`.
+
+# Code Structure
+The EgoBot is written in Python with all code in the file `egobot.py`. Sources for a German and an English conversation workspace are provided in the `resources` directory. The files are needed for the setup.   
+To easily adapt the code to different spoken languages the program is localized. The language files are in the folder `lang`. Feel free to adapt the phrases. The language file is loaded at the beginning of the setup process, and at the start of a dialog once the workspace language has been determined.
 
 # Documentation and Resources
 Here are some useful links to documentation and other resources:
