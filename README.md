@@ -8,7 +8,7 @@ A sample session:
 
 ![](https://raw.githubusercontent.com/data-henrik/bluemix-egobot/master/images/egobot-session.en.gif)
 
-# Setup instructions coming...
+# Setup instructions
 
 If you have been working with the Watson service and Python before, you probably already have everything installed. If not, you need to install Python and then head over to the Watson Developer Tools and follow the link to the [Python SDK](https://github.com/watson-developer-cloud/python-sdk). Install the SDK, too. Now download a copy of this repository or clone it.   
 To use the tool, copy `config.json.sample` to `config.json` and insert your service credentials. Note that the service URL depends on the IBM Bluemix region. It is shown as part of the credentials. You can read here more about [how to manage the Bluemix service keys](https://www.ibm.com/blogs/bluemix/2017/06/manage-bluemix-service-keys-via-cli/).
@@ -25,11 +25,34 @@ python egobot.py -setup -name egoDeutsch -lang de
 
 Wait 1-5 minutes for the training of Watson Conversation to be completed.
 
-Start the dialog:   
+# Using the EgoBot
+Once the setup is done, start a dialog:   
 ```
 python egobot.py -dialog -id "fasda5-xxxx-yyyy-913e-cde11d305ccf"
 ```
+The `id` is the `workspace_id` as returned during the setup. The dialog language depends on the workspace language. The EgoBot first queries the workspace details, obtains its language, then reads in the localization file. Thus, for a German (`de`) conversation EgoBot starts like this:   
+```
+Ich beginne mit dem Dialog. Stopp durch Ctrl+C oder Eingabe von 'bye'
 
+=========================
+
+Deine Eingabe:
+```
+For an English (`en`) workspace the dialog may begin like this:
+```
+Starting the dialog. To stop use Ctrl+C or type 'bye'
+
+=========================
+
+Your input:
+```
+
+### Obtaining the workspace ID
+If you forgot it, then you can obtain it by using the `list` feature:   
+```
+python egobot.py -l
+```
+This will return all available workspaces and list their details, including the `workspace_id`.
 
 # Documentation and Resources
 Here are some useful links to documentation and other resources:
