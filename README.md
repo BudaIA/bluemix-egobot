@@ -10,8 +10,8 @@ A sample session:
 
 # Setup instructions coming...
 
-If you have been working with the Watson service and Python before, you probably already have everything installed. If not, you need to install Python and then head over to the Watson Developer Tools and follow the link to the Python SDK. Install the SDK, too. Now download a copy of this repository or clone it.
-To use the tool, copy config.json.sample to config.json and insert your service credentials. Note that the service URL depends on the IBM Bluemix region. It is shown as part of the credentials.
+If you have been working with the Watson service and Python before, you probably already have everything installed. If not, you need to install Python and then head over to the Watson Developer Tools and follow the link to the [Python SDK](https://github.com/watson-developer-cloud/python-sdk). Install the SDK, too. Now download a copy of this repository or clone it.   
+To use the tool, copy `config.json.sample` to `config.json` and insert your service credentials. Note that the service URL depends on the IBM Bluemix region. It is shown as part of the credentials. You can read here more about [how to manage the Bluemix service keys](https://www.ibm.com/blogs/bluemix/2017/06/manage-bluemix-service-keys-via-cli/).
 
 English setup:   
 ```
