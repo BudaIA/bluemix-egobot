@@ -46,6 +46,12 @@ Starting the dialog. To stop use Ctrl+C or type 'bye'
 
 Your input:
 ```
+The EgoBot dialog currently supports these features:
+* Ask for metadata of existing intents ("Show me your intents", "Zeige mir deine Ziele", ...).
+* Let the EgoBot print the available entities ("What are your entities", "Was sind deine Entities").
+* Add new intents ("Add a new intent", "Lege einen neuen Intent an") by providing an intent name, a short description and samples. Samples need to be separated by `/`. An input line might look like "How is the weather/ Rain or shine/How will it be tomorrow".
+
+Note that support for error processing (and catching them) is very basic at this moment. Feel free to improve the code and open a pull request.
 
 ### Obtaining the Workspace ID
 If you forgot it, then you can obtain it by using the `list` feature:   
