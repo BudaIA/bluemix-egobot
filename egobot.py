@@ -136,7 +136,7 @@ def converse(workspaceID):
 
         print(json.dumps(resp))
         print
-        if resp['intents'][0]['intent']=="Display":
+        if resp['intents'][0]['intent']=="Display" and resp['intents'][0]['confidence']>0.5:
             print resp['output']['text'][0]
             if resp['context']['action']:
                 if resp['context']['action']=="listIntents":
@@ -147,7 +147,8 @@ def converse(workspaceID):
             print resp['output']['text'][0]
             if resp['context']['action']=="addIntent":
                 addIntent(workspaceID,localizationConf)
-
+        else:
+            print resp['output']['text'][0]
         # Save context for next round, but wipe out the action
         context=resp['context']
         context['action']=""
